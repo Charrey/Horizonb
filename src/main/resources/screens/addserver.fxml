@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="279.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.screens.creation.CreationScreen">
+   <children>
+      <Label text="Add Server">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Region prefHeight="21.0" prefWidth="239.0" />
+      <Label layoutX="50.0" layoutY="140.0" text="Name" />
+      <TextField fx:id="nameBar" prefHeight="25.0" prefWidth="165.0">
+         <VBox.margin>
+            <Insets right="30.0" />
+         </VBox.margin>
+      </TextField>
+      <Region prefHeight="24.0" prefWidth="239.0" />
+      <Label text="IP Address" />
+      <HBox alignment="CENTER_LEFT" prefHeight="7.0" prefWidth="239.0">
+         <children>
+            <TextField fx:id="ipBar" />
+            <Region prefHeight="60.0" prefWidth="19.0" />
+            <CheckBox fx:id="checkbox" mnemonicParsing="false" onAction="#checkBoxPressed" text="Local" />
+         </children>
+      </HBox>
+      <Region layoutX="50.0" layoutY="137.0" prefHeight="24.0" prefWidth="239.0" />
+      <Label text="Port" />
+      <TextField fx:id="portBar" alignment="CENTER" maxWidth="100.0" text="2772">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </TextField>
+      <Region prefHeight="10.0" prefWidth="239.0" />
+      <Button mnemonicParsing="false" onAction="#addPressed" prefHeight="38.0" prefWidth="199.0" text="Add" />
+      <Label fx:id="errorLabel" prefHeight="17.0" prefWidth="201.0" textFill="RED" />
+   </children>
+   <padding>
+      <Insets left="40.0" />
+   </padding>
+</VBox>
